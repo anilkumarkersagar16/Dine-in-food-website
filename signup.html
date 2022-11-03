@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+        <div class="px-8 py-6 mx-4 mt-4 text-left bg-white shadow-lg md:w-1/3 lg:w-1/3 sm:w-1/3">
+            
+            <a href="./index.html" style="
+                text-decoration: none;
+                display: inline-block;
+                padding: 8px 16px;
+                background-color: #f1f1f1;
+                color: black;
+            " >&laquo;Back To Home</a><div class="flex justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" style="
+                height: 50px;
+            " viewBox="0 0 20 20"><path d="M18 11v7a2 2 0 0 1-4 0v-5h-2V3a3 3 0 0 1 3-3h3v11zM4 10a2 2 0 0 1-2-2V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v4h1V1a1 1 0 0 1 2 0v7a2 2 0 0 1-2 2v8a2 2 0 0 1-4 0v-8z"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-center">Register</h3>
+            <form action="">
+                <div class="mt-4">
+                    <div>
+                        <label class="block" for="Name">Name<label>
+                                <input required="required" id="name" type="text" placeholder="Name"
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                    </div>
+                    <div class="mt-4">
+                        <label class="block" for="email">Email<label>
+                                <input required="required" id="email" type="text" placeholder="Email"
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                    </div>
+                    <div class="mt-4">
+                        <label class="block">Password<label>
+                                <input required="required" id="mpass" type="password" placeholder="Password"
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                    </div>
+                    <div class="mt-4">
+                        <label  class="block">Confirm Password<label>
+                                <input required="required" id="confirmpass" type="password" placeholder="Confirm Password"
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                    </div>
+                    <span class="text-xs text-red-400">Password must be same!</span>
+                    <div class="flex">
+                        <button type="submit" onclick="registerUser()" class="w-full px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Create
+                            Account</button>
+                    </div>
+                    <div class="mt-6 text-grey-dark">
+                        Already have an account?
+                        <a class="text-blue-600 hover:underline" href="./login.html">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        // function registerUser(){
+        //     let pass=document.getElementById("mpass").value;
+        //     let cnfpass=document.getElementById("confirmpass").value;
+        //     if(pass==cnfpass){
+        //         let name=document.getElementById("name").value;
+        //         let email=document.getElementById("email").value;
+        //         localStorage.setItem('Name',name);
+        //         localStorage.setItem('Email',email);
+        //         localStorage.setItem('Pass',pass);
+        //         alert("You have registered successfully.....Click OK to login.");
+        //         window.open("./login.html");
+        //     }
+        //     else{
+        //         alert("Password and Confirm Password do not match.");
+        //         location.reload();
+        //     }
+        // }
+    </script>
+</body>
+</html>
